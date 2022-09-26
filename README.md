@@ -3,7 +3,8 @@
 ## Description: 
 Simple question before do action.
 ## Usage
-First import component. Second set `text`, confirmText, timeout - thats all. After confirm component execute onConfirm calback func.
+1. Import component.
+2. Set `text`, `confirmText`, `timeout` - thats all. After confirm component execute `onConfirm` calback func.
 ```js
 import ConfirmButon from './ConfirmButton.jsx';
 
