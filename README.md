@@ -4,7 +4,7 @@
 Simple question before do action.
 ## Usage
 
-
+```js
 import ConfirmButon from './ConfirmButton.jsx';
 
 export default function App() {
