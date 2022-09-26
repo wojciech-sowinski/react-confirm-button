@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect} from 'react';
 
-const ConfirmButton = ({ text, confirmText, timeout, onConfirm }) => {
+const ConfirmButton = ({ text, confirmText, timeout, onConfirm, barColor }) => {
   const [showBar, setShowBar] = useState(false);
   const [buttonText, setButonText] = useState(text);
   const [barWidth, setBarWidth] = useState(120);
@@ -22,6 +22,7 @@ const ConfirmButton = ({ text, confirmText, timeout, onConfirm }) => {
       }, timeout * 1000);
 
       setTimeouts((prev) => [...prev, barWidthTimeout, showBarTimeout]);
+      
     } else {
       setShowBar(false);
       setButonText(text);
@@ -42,8 +43,7 @@ const ConfirmButton = ({ text, confirmText, timeout, onConfirm }) => {
     left: barWidth + '%',
     width: '120%',
     height: '100%',
-    backgroundColor: 'rgb(255,1,1)',
-    backdropfilter: 'blur(10px)',
+    backgroundColor: barColor,
     transition: timeout + 's linear',
   };
 
