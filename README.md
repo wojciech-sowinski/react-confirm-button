@@ -1,4 +1,4 @@
-## "React Confirm Button"
+# "React Confirm Button"
 
 ## Description: 
 Simple question before do action.
