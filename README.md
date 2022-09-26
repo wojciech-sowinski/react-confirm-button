@@ -1,7 +1,8 @@
-# react-confirm-button
+## "React Confirm Button"
 
-"React Confirm Button" - simple question before do action.
-Usage:
+## Description: 
+Simple question before do action.
+## Usage
 
 
 import ConfirmButon from './ConfirmButton.jsx';
