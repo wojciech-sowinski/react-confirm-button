@@ -7,7 +7,7 @@ Simple question before do action.
 ## Usage
 
 1. Import component.
-2. Set `text`, `confirmText`, `timeout` - thats all. 
+2. Set `text`, `confirmText`, `timeout`(in seconds) - thats all. 
 
 After confirm component execute `onConfirm` calback func.
 
@@ -22,7 +22,7 @@ export default function App() {
         confirmText={'Are you sure?'}
         onConfirm={() => { console.log('Confirmed!')}}
         barColor={'#be4d25'}
-        timeout={3} /'seconds'
+        timeout={3}
       />
     </div>
   );
